@@ -1,4 +1,3 @@
-
 document.getElementById('burger').onclick = function () {
     document.getElementById('menu').classList.add('open');
 }
