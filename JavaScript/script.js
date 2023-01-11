@@ -7,3 +7,5 @@ document.querySelectorAll('#menu *').forEach((item) => {
         document.getElementById('menu').classList.remove('menu__open');
     }
 })
+
+console.log("Hello World!!!")
