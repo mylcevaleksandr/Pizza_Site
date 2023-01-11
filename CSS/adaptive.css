@@ -1,20 +1,22 @@
 /* 1024-1229 */
+
+
 @media screen and (max-width: 1229px) {
     .container {
         padding-left: 15px;
         padding-right: 15px;
     }
 
-    .main-pizza {
+    .main__pizza {
         width: 400px;
-
+        margin-top: 40px;
     }
 
-    .main-pizza img {
+    .main__pizza-img {
         max-width: 100%;
     }
 
-    .products-items {
+    .products__items {
         justify-content: center;
     }
 
@@ -22,11 +24,11 @@
         margin: 12px;
     }
 
-    .order-form {
+    .order__form {
         margin-left: 45px;
     }
 
-    .order .container {
+    .order__container {
         max-width: 1024px;
     }
 }
@@ -35,15 +37,15 @@
 /* 768-1023 */
 @media screen and (max-width: 1023px) {
 
-    .menu ul {
+    .menu__list {
         width: 420px;
     }
 
-    .main .container {
+    .main__container {
         flex-direction: column;
     }
 
-    .main-info {
+    .main__info {
         order: 2;
         margin-top: 20px;
     }
@@ -52,11 +54,11 @@
         margin-top: 70px;
     }
 
-    .main-info h1 {
+    .main__double-title {
         text-align: center;
     }
 
-    .main-action {
+    .main__action {
         text-align: center;
     }
 
@@ -70,17 +72,17 @@
         position: relative;
     }
 
-    .order-image {
+    .order__image {
         position: absolute;
         z-index: -1;
         right: calc(60% - 400px);
     }
 
-    .order-image img {
+    .order__image-img {
         position: relative;
     }
 
-    .order .container {
+    .order__container {
         justify-content: center;
     }
 
@@ -89,18 +91,18 @@
 /* 425-767 */
 @media screen and (max-width: 767px) {
 
-    .footer .container {
+    .header__container {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 390px;
+    }
+
+    .footer__container {
         justify-content: space-between;
     }
 
     .rights {
         margin-left: 0;
-    }
-
-    .header .container {
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 390px;
     }
 
     .menu {
@@ -109,49 +111,48 @@
         flex-basis: 100%;
     }
 
-    .menu ul {
+    .menu__ul {
         max-width: 390px;
     }
 
-    .cart {
+    .header__cart {
         margin-left: 20px;
     }
 
-    .main-info h1 {
+    .main__double-title {
         line-height: 45px;
     }
 
-    .main-advantages {
+    .main__advantages {
 
         margin-left: auto;
         margin-right: auto;
     }
 
-    .order .container {
+    .order__container {
         flex-direction: column;
         align-items: center;
     }
 
-    .order-text-title {
+    .order__double-title {
         text-align: center;
     }
 
-    .order-text-message {
+    .order__text-message {
         text-align: center;
         margin-bottom: 25px;
     }
 
-    .order-form {
+    .order__form {
         margin-left: 0;
     }
 }
 
 @media screen and (max-width: 656px) {
-    .main-advantages{
+    .main__advantages {
         max-width: 306px;
     }
 }
-
 
 /* 375-424 */
 @media screen and (max-width: 424px) {
@@ -167,39 +168,39 @@
         background: rgba(0, 0, 0, 0.8);
     }
 
-    .menu ul {
+    .menu__list {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
         margin: 0 auto;
     }
 
-    .menu-item a {
+    .menu__link {
         color: rgb(255, 176, 29);
 
     }
 
-    .menu-item {
+    .menu__item {
         margin: 15px 0
     }
 
-    .burger {
+    .header__burger {
         display: block;
     }
 
-    .burger svg {
+    .header__burger-svg{
         width: 36px;
         height: 36px;
         margin-right: 20px;
         fill: #fad7a7;
     }
 
-    .menu.open {
-        display:flex;
+    .menu__open {
+        display: flex;
         align-items: center;
     }
 
-    .menu .close {
+    .menu__close {
         display: block;
         width: 24px;
         height: 24px;
@@ -210,7 +211,7 @@
     }
 
 
-    .main-pizza {
+    .main__pizza {
         width: 100%;
     }
 }
@@ -218,19 +219,19 @@
 /* 320-374 */
 @media screen and (max-width: 374px) {
 
-    .main-info h1 {
+    .main__double-title {
         font-size: 38px;
     }
 
-    .order-form {
+    .order__form {
         text-align: center;
     }
 
-    .order-input {
+    .order__base-input {
         width: 290px;
     }
 
-    .order .btn {
+    .order__btn {
         width: 290px;
     }
 

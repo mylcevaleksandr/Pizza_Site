@@ -28,7 +28,7 @@ body {
     padding: 16px 0 15px 0;
 }
 
-.logo img {
+.logo__img{
     width: 159px;
 }
 
@@ -37,20 +37,20 @@ body {
     margin: 0 auto;
 }
 
-.header .container {
+.header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.menu ul {
+.menu__list {
     list-style: none;
     display: flex;
     justify-content: space-between;
     width: 489px;
 }
 
-.menu-item a {
+.menu__link {
     text-decoration: none;
     font-size: 16px;
     color: rgb(164, 107, 0);
@@ -61,17 +61,17 @@ body {
     margin: 132px 0 81px 0;
 }
 
-.main .container {
+.main__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.main-info {
+.main__info {
     max-width: 622px;
 }
 
-.main-info h1 {
+.main__double-title {
     font-size: 45px;
     font-family: "Muller Extra Bold", sans-serif;
     line-height: 1.222;
@@ -81,11 +81,11 @@ body {
     color: rgb(185, 145, 80);
 }
 
-.double-title span {
+.double-title__span {
     color: #ffaf18;
 }
 
-.main-advantages {
+.main__advantages {
     margin-top: 13px;
     display: flex;
     flex-wrap: wrap;
@@ -101,11 +101,11 @@ body {
     justify-content: space-between;
 }
 
-.advantage-text {
+.advantage__text {
     margin-left: 16px;
 }
 
-.advantage-title {
+.advantage__title {
     font-size: 16px;
     font-family: "Muller Extra Bold", sans-serif;
     color: rgb(255, 175, 24);
@@ -113,19 +113,17 @@ body {
     margin-bottom: 10px;
 }
 
-.advantage-description {
+.advantage__description {
     font-size: 16px;
     color: rgb(185, 145, 80);
 }
 
-.main-action {
+.main__action {
     margin-top: 60px;
 }
 
 .btn {
     background-color: rgb(255, 175, 24);
-    width: 224px;
-    height: 60px;
     cursor: pointer;
     outline: none;
     border: 0;
@@ -136,18 +134,23 @@ body {
     color: rgb(56, 36, 0);
 }
 
+.main__btn{
+    width: 224px;
+    height: 60px;
+}
+
 .products {
     padding: 80px 0 120px 0;
 }
 
-.products h2 {
+.products__header{
     font-size: 35px;
     font-family: "Muller Bold", sans-serif;
     color: rgb(189, 152, 92);
     text-align: center;
 }
 
-.products-items {
+.products__items {
     display: flex;
     margin-top: 35px;
     justify-content: space-between;
@@ -164,20 +167,20 @@ body {
     margin-top: 24px;
 }
 
-.product-image {
+.product__image {
     height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.product-title {
+.product__title {
     font-size: 18px;
     font-family: "Muller Bold", sans-serif;
     color: rgb(56, 36, 0);
 }
 
-.product-text {
+.product__text {
     margin: 14px 0 15px 0;
     font-size: 14px;
     color: rgb(24, 26, 26);
@@ -186,7 +189,7 @@ body {
     height: 49px;
 }
 
-.product-action .btn {
+.product__btn {
     width: 242px;
     height: 50px;
     padding: 17px;
@@ -197,17 +200,17 @@ body {
     overflow: hidden;
 }
 
-.order .container {
+.order__container {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
 
-.order-text {
+.order__text {
     max-width: 384px;
 }
 
-.order-text-title {
+.order__double-title {
     margin-bottom: 65px;
     font-size: 35px;
     font-family: "Muller Extra Bold", sans-serif;
@@ -215,49 +218,52 @@ body {
     text-align: left;
 }
 
-.order-text-message {
+.order__text-message {
     font-size: 16px;
     color: rgb(185, 145, 80);
     line-height: 1.5;
 }
 
-.order-form {
+.order__form {
     margin-left: 122px;
     max-width: 330px;
 
 }
 
-.order-input {
+.base-input{
     border-width: 1px;
     border-color: rgb(185, 145, 80);
     border-style: solid;
     background-color: rgb(255, 255, 255);
-    width: 330px;
     font-size: 18px;
     color: rgb(119, 94, 49);
     padding: 23px 22px 24px 22px;
-    margin-bottom: 24px;
     box-sizing: border-box;
-    height: 60px;
     outline: none;
 }
 
-.order-input::placeholder {
+.order__base-input {
+    width: 330px;
+    height: 60px;
+    margin-bottom: 24px;
+}
+
+.order__base-input::placeholder {
     color: rgb(203, 168, 110);
 }
 
-.order .btn {
+.order__btn {
     width: 330px;
     height: 60px;
 }
 
-.order-image {
+.order__image {
     width: 282px;
     position: relative;
     margin-left: 78px;
 }
 
-.order-image img {
+.order__image-img {
     position: absolute;
     bottom: -35px;
     left: 0;
@@ -269,21 +275,21 @@ body {
     box-shadow: 0 0 13.8px 1.2px rgba(152, 152, 152, 0.5);
 }
 
-.footer .container {
+.footer__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.rights {
-    margin-left: 358px;
+.footer__rights {
     font-size: 12px;
     color: rgb(186, 179, 179);
 }
 
-.burger{
+.header__burger{
     display: none;
 }
 
-.close{
+.menu__close{
     display: none;
 }
