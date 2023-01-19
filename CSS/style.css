@@ -25,10 +25,9 @@ body {
 .header {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.5);
-    padding: 16px 0 15px 0;
 }
 
-.logo__img{
+.logo__img {
     width: 159px;
 }
 
@@ -134,7 +133,7 @@ body {
     color: rgb(56, 36, 0);
 }
 
-.main__btn{
+.main__btn {
     width: 224px;
     height: 60px;
 }
@@ -143,7 +142,7 @@ body {
     padding: 80px 0 120px 0;
 }
 
-.products__header{
+.products__header {
     font-size: 35px;
     font-family: "Muller Bold", sans-serif;
     color: rgb(189, 152, 92);
@@ -230,13 +229,13 @@ body {
 
 }
 
-.base-input{
+.base-input {
     border-width: 1px;
     border-color: rgb(185, 145, 80);
     border-style: solid;
     background-color: rgb(255, 255, 255);
     font-size: 18px;
-    color: rgb(119, 94, 49);
+    color: rgb(155, 102, 0);
     padding: 23px 22px 24px 22px;
     box-sizing: border-box;
     outline: none;
@@ -286,10 +285,10 @@ body {
     color: rgb(186, 179, 179);
 }
 
-.header__burger{
+.header__burger {
     display: none;
 }
 
-.menu__close{
+.menu__close {
     display: none;
 }
