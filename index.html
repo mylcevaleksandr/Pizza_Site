@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Order Pizza</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/adaptive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script async src="JavaScript/script.js"></script>
+    <title>Order Pizza</title>
+    <link rel="stylesheet/less" href="CSS/style.less">
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script defer src="JavaScript/jquery-3.6.3.min.js"></script>
+    <script defer src="JavaScript/script.js"></script>
+    <script defer src="JavaScript/cookieLibrary.js"></script>
 </head>
 <body>
 
 <header class="header" id="head">
-    <div class="container header__container">
+    <div class="container">
         <div class="header__burger" id="burger">
             <svg viewBox="0 0 512 512" class="header__burger-svg">
                 <path d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/>
@@ -62,7 +64,7 @@
 <section class="main">
     <div class="container  main__container">
         <div class="main__info">
-            <h1 class="double-title  main__double-title">
+            <h1 id="h1" class="double-title  main__double-title">
                 Самая вкусная пицца в мире
                 <span class="double-title__span"> только в Pizza Cheff</span>
             </h1>
@@ -118,7 +120,7 @@
                 </div>
             </div>
             <div class="main__action">
-                <button class="btn main__btn">Выбрать пиццу</button>
+                <button class="btn main__btn" id="main__btn">Выбрать пиццу</button>
             </div>
         </div>
         <div class="main__pizza">
@@ -129,7 +131,7 @@
 
 <section class="products" id="pizza">
     <div class="container">
-        <h2 class="products__header">Выберите свою любимую пиццу </h2>
+        <h2 class="products__header" id="productsHeader">Выберите свою любимую пиццу </h2>
         <div class="products__items">
             <div class="product">
                 <div class=" product__image">
@@ -232,10 +234,11 @@
             </div>
         </div>
         <div class="order__form">
-            <input type="text" class="base-input order__base-input" placeholder="Ваше имя">
-            <input type="text" class="base-input order__base-input" placeholder="Адрес доставки">
-            <input type="text" class="base-input order__base-input" placeholder="Телефон">
-            <button class="btn order__btn">Оформить заказ</button>
+            <input name="al" type="text" class="base-input order__base-input" id="product-input" placeholder="Пицца">
+            <input type="text" class="base-input order__base-input" id="address__input" placeholder="Адрес доставки">
+            <input type="text" class="base-input order__base-input" id="phone__input" placeholder="Телефон"
+                   onclick="this.style.backgroundColor='green' ">
+            <button class="btn order__btn" id="no-touch">Оформить заказ</button>
         </div>
         <div class="order__image">
             <img src="images/pizzzzza.png" alt="pizza" class="order__image-img">
@@ -248,9 +251,22 @@
         <div class="logo">
             <img src="images/logo@2x.png" alt="logo" class="logo__img">
         </div>
-        <div class="footer__rights">Все права защищены, 2020</div>
+        <div class="footer__rights">Все права защищены, <span></span></div>
     </div>
 </footer>
+
+<div class="cookie">
+    <div class="cookie-title">
+        <div>Мы используем файлы cookie</div>
+        <span class="cookie-accept">&times;</span>
+    </div>
+    <div class="cookie-text">
+        Для корректной работы сайта мы используем cookie-файлы.
+    </div>
+    <div class="cookie-button">
+        <button class="btn cookie-accept">Принять</button>
+    </div>
+</div>
 
 </body>
 </html>
